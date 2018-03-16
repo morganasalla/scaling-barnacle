@@ -1,0 +1,67 @@
+    1  gcc
+    2  g++
+    3  clear
+    4  gdb
+    5  clear
+    6  ls
+    7  astyle
+    8  clear
+    9  ls
+   10  ls
+   11  cd
+   12  cd ~
+   13  ls
+   14  cd DriveH/2018-1/pe2/Aula02/
+   15  clear
+   16  pwd
+   17  history
+   18  clear
+   19  ls
+   20  more hello.c 
+   21  cd
+   22  ls
+   23  cd -
+   24  clear
+   25  cc
+   26  cc hello.c 
+   27  ls
+   28  ./a.out 
+   29  cc hello.c -o hello
+   30  ls
+   31  ./hello
+   32  cc numero.c -o hell
+   33  cc numero.c -o numero
+   34  ./numero
+   35  history 
+   36  clear
+   37  ls
+   38  ll
+   39  a.out
+   40  ./a;out
+   41  ./a.out
+   42  clear
+   43  ls
+   44  cc numero.c -o numero
+   45  ./numero
+   46  history 
+   47  clear
+   48  history >> comandos.txt
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
