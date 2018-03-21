@@ -26,12 +26,31 @@ http://www.cplusplus.com/reference/iomanip/
 
 using namespace std;
 
+
+void box(string s)
+{
+	int tam = s.size();
+	cout << "+-";
+	for (int i = 1 ; i <= tam ; i++)
+	{
+		cout << "-";
+	}
+	cout << "-+" << endl;
+	cout << "| " << s << " |" << endl;
+	cout << "+-";
+	for (int i = 1 ; i <= tam ; i++)
+	{
+		cout << "-";
+	}
+	cout << "-+" << endl;
+	cout << endl;
+}
+
 int main()
 {
 	float n;
 
-	cout << " Ex 02" << endl;
-	cout << "=======" << endl << endl;
+	box("Exercício 02");
 
 	for (n = 1.0f ; n <= 10.0f ; n += 0.5)
 	{
