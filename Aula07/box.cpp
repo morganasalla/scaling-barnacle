@@ -6,12 +6,12 @@ using namespace std;
 
 void line(int t)
 {
-	cout << "+-";
+	cout << "*-";
 	for (int i = 1 ; i <= t ; i++)
 	{
 		cout << "-";
 	}
-	cout << "-+" << endl;
+	cout << "-*" << endl;
 }
 
 
