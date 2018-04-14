@@ -1,5 +1,5 @@
 /*
-Escreva um programa que calcula e apresenta o resultado do dobro de um inteiro informado como parâmetro.
+
 */
 
 #include <iostream>
@@ -10,8 +10,8 @@ using namespace std;
 class equacao 
 {
 public:
-	float a, b, c;
-	float x1, x2;
+	float a, b, c;		// entrada
+	float x1, x2;		// saída
 
 	void baskara()
 	{
