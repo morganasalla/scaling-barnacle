@@ -32,15 +32,23 @@ public:
 
 	void credit(int valor)
 	{
-		saldo = saldo + valor;
+  		if (valor < 0) {
+			cout << "Invalid value!" << endl;
+		} else {
+			saldo = saldo + valor;
+		}
 	}
 
 	void debit(int valor)
 	{
-		if (valor <= saldo) {
-			saldo = saldo - valor;		
+  		if (valor < 0) {
+			cout << "Invalid value!" << endl;
 		} else {
-			cout << "Debit amount exceeded account balance" << endl;
+			if (valor <= saldo) {
+				saldo = saldo - valor;		
+			} else {
+				cout << "Debit amount exceeded account balance" << endl;
+			}
 		}
 	}
 
@@ -54,9 +62,34 @@ public:
 
 int main()
 {
-	Account a1(100), a2(300);
-	a1.debit(200);
-	a2.debit(200);
+	int v;
+	int c;
+
+	Account a1(1000), a2(300);
+
+	while (1) {
+		cout << "Informe a conta (999 para terminar)";
+		cin >> c;
+		if (c == 999) {
+			break;
+		}
+
+		cout << "Informe o valor";
+		cin >> v;
+
+		if (c == 1) {
+			a1.debit(v);
+		} else if (c == 2) {
+			a2.debit(v);
+		} else {
+			cout << "Conta inválida!" << endl;
+		}
+	
+		cout << "Saldo de A1=" << a1.getBalance() << endl;
+		cout << "Saldo de A2=" << a2.getBalance() << endl;
+	}
+	cout << "FIM!" <<  endl;
+
 	return 0;
 }
 
