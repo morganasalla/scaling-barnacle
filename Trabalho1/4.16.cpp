@@ -2,27 +2,31 @@
 
 using namespace std;
 
-int main(void)
+int main()
 {
   
   int horas=0;
-  float valor=0, X;
+  float valor=0, x;
 
-    do {
+    while (1){
 
         cout << "Entre com as horas trabalhadas (-1 para terminar):" ;
         cin >> horas ;
         
+if ( horas == -1){
+break;
+}
         cout << "Entre com o valor por hora trabalhada ($00.00):"; 
         cin >> valor ; 
         
       
         if ( horas > 40)
-            X= (horas*valor + (0.5*(horas-40)*valor));
+            x = (horas*valor + (0.5*(horas-40)*valor));
         else
-            X=(horas*valor);
-        cout << " salário bruto é: " << X << endl; 
+            x = (horas*valor);
+        cout << " salário bruto é: " << x << endl; 
 
-    }while(horas != -1);
+    }
+return 0;
     
 }
